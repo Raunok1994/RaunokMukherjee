@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> celcious to farenheit and viceversa</title>
+</head>
+
+<body>
+<h1>celcious to farenheit and viceversa</h1>
+<label>celcious:</label>
+<input type="text" id="cel" placeholder="enter the celcious reading">
+<label>farenheit:</label>
+<input type="text" id="fer" placeholder="enter the farenheit reading">
+<button type="button" id="btn">See Area</button>
+
+
+<p id ="p1"></p>
+<p id ="p2"></p>
+
+
+<script>
+document.querySelector('#btn').addEventListener('click', function () {
+const c = parseInt(document.querySelector('#cel').value);
+const f = parseInt(document.querySelector('#fer').value);
+var d=(5/9)*(f-32);
+var e=(c*1.8)+32;
+document.getElementById("p1").innerHTML="the centigrade value :" + d;
+document.getElementById("p2").innerHTML="the farenheit value :" +e;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Qustion's answer</s> </title>
+</head>
+<body>
+    <div>
+        <input type="text" id="inp">
+        <button onclick="myfunction()">go </button>
+    </div>
+    <div>
+        <img id="myImage" src="" >
+    </div>
+    <p id="div"></p>
+    <script>
+         function myfunction()
+          { 
+              var a =document.getElementById("inp").value;
+              switch(a) {
+                 case "red" :
+                 var BackgroundColor="RED";
+                 document.getElementById("div").innerHTML=`oh! the color is red`;
+                 document.body.style.backgroundColor=BackgroundColor
+                 break;
+                 case "green" :
+                 var BackgroundColor="GREEN";
+                 document.getElementById("div").innerHTML=`oh! the color is green`;
+                 document.body.style.backgroundColor=BackgroundColor
+                 break;
+                 case "blue" :
+                 var BackgroundColor="BLUE";
+                 document.getElementById("div").innerHTML=`oh! the color is blue`;
+                 document.body.style.backgroundColor=BackgroundColor
+                 break;
+                 case "pink" :
+                 var BackgroundColor="PINK";
+                 document.getElementById("div").innerHTML=`oh! the color is pink`;
+                 document.body.style.backgroundColor=BackgroundColor
+                 break;
+                 case "yellow" :
+                 var BackgroundColor="YELLOW";
+                 document.getElementById("div").innerHTML=`oh! the color is yellow`;
+                 document.body.style.backgroundColor=BackgroundColor
+                 break;
+                 case "violet" :
+                 var BackgroundColor="VIOLET";
+                 document.getElementById("div").innerHTML=`the color is violet`;
+                 document.body.style.backgroundColor=BackgroundColor
+                 break;
+                 default:
+                 document.getElementById('myImage') .src="https://image.freepik.com/free-photo/attractive-shocked-young-caucasian-male-with-bugged-eyes-dressed-casually-pointing-index-finger-sideways-grey-blank-wall-showing-something-astonishing-it-human-face-expressions-emotions_176420-13303.jpg";
+                 document.getElementById('div').innerHTML="oh! the color is default";
+                 break;
+                       }
+                    
+
+            }
+    </script>
+</body>
+</html>

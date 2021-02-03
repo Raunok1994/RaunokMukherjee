@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For </h2>
+<div>
+ Enter any string: <input type="text" id="inp"> <br><br>&nbsp;&nbsp;&nbsp;
+ Result string: <input type="text" id="inp1"> <br>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+  <button type="submit" onclick="myfunction()">go </button>
+</div>
+<script>
+function myfunction() {
+
+  var x = document.getElementById("inp").value;
+  var y="";
+  for(i=x.length-1;i>=0;i--)
+     {
+       y=y+x[i];
+     }
+  if(x==y)
+    document.getElementById('inp1').value = x +" is a palindrome";
+  else
+  document.getElementById('inp1').value = x +" is not a palindrome";
+    }
+</script>
+
+</body>
+</html>

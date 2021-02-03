@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Add and remove animals</h2>
+
+<button onclick="myFunction()">Click</button>
+
+<p id="ani"></p>
+<p id="anim"></p>
+<script>
+function myFunction() {
+var animal = ["Monkey","Dog","Donkey","Cat"];
+var removed1 = animal.slice(0, 1) + animal.slice(2, 3); 
+document.getElementById("ani").innerHTML ="old Array:<br>" + animal + "<br><br> " + "removed elements :<br>" + removed1;
+animal[0]="Goat";
+animal[2]="Kitten";
+document.getElementById("anim").innerHTML ="After addition Goat & Kitten the new array will be :" + animal;  
+}
+</script>
+</body>
+</html>
